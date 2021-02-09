@@ -8,7 +8,7 @@
     "id": "youthQD",
     "name": "中青多账号签到+转盘抽奖",
     "keys": ["youthheader_zq", "read_zq", "red_zq", "readtime_zq", "cashurl_zq", "cashbody_zq","youthheader_zq2", "read_zq2", "red_zq2", "readtime_zq2", "cashurl_zq2", "cashbody_zq2","youthheader_zq3", "read_zq3", "red_zq3", "readtime_zq3", "cashurl_zq3", "cashbody_zq3"],
-    "author": "@jiuli",
+    "author": "@cknime",
     "settings": [
       {
         "id": "zqSuffix",
