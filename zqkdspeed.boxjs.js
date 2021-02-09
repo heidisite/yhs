@@ -1,12 +1,12 @@
 {
   "id": "shakers.app.sub",
-  "name": "shakers中青应用订阅",
+  "name": "shakers中青speed",
   "author": "@shalier",
   "icon": "",
   "repo": "https://github.com/Sunert/Script",
   "apps": [{
     "id": "youthQD",
-    "name": "中青多账号签到+转盘抽奖",
+    "name": "speedzq签到+pz抽奖",
     "keys": ["youthheader_zq", "read_zq", "red_zq", "readtime_zq", "cashurl_zq", "cashbody_zq","youthheader_zq2", "read_zq2", "red_zq2", "readtime_zq2", "cashurl_zq2", "cashbody_zq2","youthheader_zq3", "read_zq3", "red_zq3", "readtime_zq3", "cashurl_zq3", "cashbody_zq3"],
     "author": "@cknime",
     "settings": [
@@ -30,7 +30,7 @@
     "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js"
   },{
     "id": "youthZDRead",
-    "name": "中青多账号阅读",
+    "name": "read多账号阅读",
     "keys": ["zqgetbody_body","index","zqgetbody_body2","index2","zqgetbody_body3","index3"],
     "author": "@nima",
     "settings": [
