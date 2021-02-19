@@ -1,63 +1,21 @@
-{
-  "id": "shakers.app.sub",
-  "name": "shakers中青speed",
-  "author": "@shalier",
-  "icon": "",
-  "repo": "https://github.com/Sunert/Script",
-  "apps": [{
-    "id": "youthQD",
-    "name": "speedzq签到+pz抽奖",
-    "keys": ["youthheader_zq", "read_zq", "red_zq", "readtime_zq", "cashurl_zq", "cashbody_zq","youthheader_zq2", "read_zq2", "red_zq2", "readtime_zq2", "cashurl_zq2", "cashbody_zq2","youthheader_zq3", "read_zq3", "red_zq3", "readtime_zq3", "cashurl_zq3", "cashbody_zq3"],
-    "author": "@cknime",
-    "settings": [
-      {
-        "id": "zqSuffix",
-        "name": "当前账号",
-        "val": "1",
-        "type": "number",
-        "desc": "当前抓取ck记录的账号序号，如：1、2、3目前仅支持3账号"
-      },
-      {
-        "id": "zqCount",
-        "name": "账号个数",
-        "val": "1",
-        "type": "number",
-        "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
-      }
-    ],
-    "repo": " https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js",
-    "icons": ["https://raw.githubusercontent.com/jiuli12/Script/main/image/youth.png", "https://raw.githubusercontent.com/jiuli12/Script/main/image/youth.png"],
-    "script": "https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js"
-  },{
-    "id": "youthZDRead",
-    "name": "read多账号阅读",
-    "keys": ["zqgetbody_body","index","zqgetbody_body2","index2","zqgetbody_body3","index3"],
-    "author": "@nima",
-    "settings": [
-       {
-          "id": "zqReadLog",
-          "name": "通知",
-          "val": false,
-          "type": "boolean",
-          "desc": "通知开关，30秒一次,较频繁！建议关闭。"
-      },
-      {
-        "id": "zqReadSuffix",
-        "name": "当前账号",
-        "val": "1",
-        "type": "number",
-        "desc": "当前抓取ck记录的账号序号，如：1、2、3目前仅支持3账号"
-      },
-      {
-        "id": "zqReadCount",
-        "name": "账号个数",
-        "val": "1",
-        "type": "number",
-        "desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
-      }
-    ],
-    "repo": "https://raw.githubusercontent.com/GoodHolidays/Scripts/master/Task/Youth_Read.js",
-    "icons": ["https://raw.githubusercontent.com/jiuli12/Script/main/image/youth.png", "https://raw.githubusercontent.com/jiuli12/Script/main/image/youth.png"],
-    "script": "https://raw.githubusercontent.com/GoodHolidays/Scripts/master/Task/Youth_Read.js"
-  } ]
-}
+京东Cookie：
+  hostname = wq.jd.com, un.m.jd.com, api.m.jd.com
+  
+  微信访问含有会员机制的京东自营店会员页面
+  ^https?://wq\.jd\.com/pinbind/pintokenredirect url script-request-header NE.cookie.js
+  访问京东APP内嵌了H5页面：后台杀京东APP后再进入或进首页的免费水果都可获取
+  ^https?://un\.m\.jd\.com/cgi-bin/app/appjmp url script-request-header NE.cookie.js
+
+  ^https?://api\.m\.jd\.com/client\.action.*functionId=signBean(Index|GroupStageIndex) url script-request-header NE.cookie.js
+  复制 https://home.m.jd.com/myJd/newhome.action 到浏览器打开 ，在个人中心自动获取 cookie，没成功就试试刷新页面
+  ^https?://wq\.jd\.com/user_new/info/GetJDUserInfoUnion url script-request-header NE.cookie.js
+
+快手Cookie：
+  hostname = nebula.kuaishou.com, *.gifshow.com, *.ksapisrv.com
+
+  访问快手极速版签到日历页面
+  ^https?://nebula\.kuaishou\.com/rest/n/nebula/sign/query url script-request-header NE.cookie.js
+
+  点金币收益/积分收益/现金收益去访问我的收益页面时获取cookie数据
+  ^https://nebula\.kuaishou\.com/rest/n/nebula/account/overview url script-request-header NE.cookie.js
+  ^https://zt\.gifshow\.com/rest/zt/encourage/account/summary/withKscoinTrial url script-request-header NE.cookie.js
